@@ -4,6 +4,7 @@ xmlns:x="urn:schemas-microsoft-com:office:excel"
 xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
+
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 <meta name=ProgId content=Excel.Sheet>
 <meta name=Generator content="Microsoft Excel 15">
@@ -52,6 +53,18 @@ else
 </head>
 
 <body link="#0563C1" vlink="#954F72">
+<script>
+function start_scroll_down() { 
+   scroll = setInterval(function(){ window.scrollBy(0, 2); console.log('start');}, 10);
+}
+
+function stop_scroll_down() {
+   clearInterval(scroll);
+   console.log('stop');
+}
+</script>
+<button onclick="start_scroll_down();">Start Scroll</button>
+<button onclick="stop_scroll_down();">Stop Scroll</button>
 
 <table border=0 cellpadding=0 cellspacing=0 width=1088 style='border-collapse:
  collapse;table-layout:fixed;width:816pt'>
